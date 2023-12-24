@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TextToSpeech from "./TextToSpeech";
 import "./App.css";
 
-const BlogPost = () => {
+const App = () => {
   const [userText, setUserText] = useState("");
 
   const handleInputChange = (event) => {
@@ -11,7 +11,7 @@ const BlogPost = () => {
 
   return (
     <div className="container">
-      <h1>My Blog Post</h1>
+      <h1>Text To Speech Converter</h1>
       <textarea
         placeholder="Type your text here..."
         value={userText}
@@ -25,4 +25,4 @@ const BlogPost = () => {
   );
 };
 
-export default BlogPost;
+export default App;
